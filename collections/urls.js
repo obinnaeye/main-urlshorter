@@ -14,7 +14,10 @@ urls.new = function(uri, id, response){
        collection.findOne({originalURL: uri},{_id:0, originalURL:1, shortURL:1}, function(err, doc){
                 if(err) {response.send("An errow occured")}
                 else if(doc){
-                    response.send(doc);
+                    response.send({
+                        originalURL: host + doc.originalURL,
+                        shortURL: doc.shortURL
+                    });
                 }else{
                     db.close()
                     MongoClient.connect(mlabURI, function (err, db1){
