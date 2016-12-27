@@ -8,6 +8,9 @@ var app = express();
 var url =process.env.MONGODB_URI;
 //helmet is good header security
 app.use(helmet());
+
+app.use(express.static(__dirname + '/public'));
+
 //Set the server homepage route
 app.get("/", function(req, res){
     res.send("Ok");

@@ -1,0 +1,33 @@
+h1, h2, h3{
+    text-align: center;
+}
+
+.container code{
+    margin: 2vw;
+    color: red;
+}
+.container{
+    margin: 0 auto;
+    width: 80vw;
+    height: auto;
+}
+.sample1, .sample2{
+    background: #E5E8E8;
+    margin: 1vw;
+    padding: 2vw;
+    width: 40vw;
+    height: auto;
+    position: absolute;
+    top: 140px;
+    border-radius: 10px;
+    overflow: auto;
+    text-align:left;
+}
+
+.sample1{
+    left: 5vw;
+}
+.sample2{
+    left: 50vw;
+}
+

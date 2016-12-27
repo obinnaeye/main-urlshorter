@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Timestamp Microservice</title>
+    <link type="text/css" rel="stylesheet" href="./stylesheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+
+<body>
+    <h2>
+        URL Shortener-Microservice<br>
+        <code>FreeCodeCamp API-Project By Nnenanya O.K</code>
+    </h2>
+    <div class="container">
+        <div class = "directions">
+            Root: <code>https://urlshorterking.herokuapp.com</code><br>
+            GitHub: <a href="https://github.com/obinnaeye/main-urlshorter" target="_blank"><code>https://github.com/obinnaeye/main-urlshorter</code></a>
+        </div>
+        <div class = "sample1">
+            <h3 class="formats">
+                Sample 1
+            </h3>
+            <div>
+                Input: <code>https://urlshorterking.herokuapp.com/https://www.google.com.ng</code>
+            </div><br>
+            <div class="nat-format">
+                Output:
+                <code>{</code><br>
+                <code>"originalURL": "https://urlshorterking.herokuapp.com/https://www.google.com.ng",</code><br>
+                <code>"shortURL": "https://urlshorterking.herokuapp.com/SyFdq7lBl"</code><br>
+                <code>}</code>
+                <br>
+                <h6>And</h6> <code>https://urlshorterking.herokuapp.com/SyFdq7lBl</code>
+                <h6>Will Redirect to:</h6>
+                <code>https://www.google.com.ng</code>
+            </div>
+            
+        </div>
+        
+        <div class = "sample2">
+            <h3 class="formats">
+                Sample 2
+            </h3>
+            <div>
+                Input: <code>https://urlshorterking.herokuapp.com/https://www.mlab.com</code>
+            </div><br>
+            <div class="nat-format">
+                Output:
+                <code>{</code><br>
+                <code>"originalURL": "https://urlshorterking.herokuapp.com/https://www.mlab.com",</code><br>
+                <code>"shortURL": "https://urlshorterking.herokuapp.com/HyWazrlre"</code><br>
+                <code>}</code>
+                <br>
+                <h6>And</h6> <code>https://urlshorterking.herokuapp.com/HyWazrlre</code>
+                <h6>Will Redirect to:</h6>
+                <code>https://www.google.com.ng</code>
+            </div>
+        </div>
+        <span></span><span></span>
+    </div>
+    
+</body>
+
+
+</html>
