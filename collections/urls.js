@@ -2,7 +2,7 @@ var mongodb = require("mongodb");
 var MongoClient = mongodb.MongoClient;
 
 var mlabURI =process.env.MONGODB_URI;
-var host = "https://urlshort-obinnaeye.c9users.io/";
+var host = "https://urlshorterking.herokuapp.com/";
 
 var urls ={};
 
@@ -44,16 +44,16 @@ urls.short = function(uri, response){
             else if (doc) {response.redirect( doc.originalURL);}
             else {response.send("Can not find document with the parameter " + uri + "in the database!")}
         });
-        db.close()
-    })
-}
+        db.close();
+    });
+};
 
 urls.errorURL = function(uri, response){
-    response.send("The URL you entered is invalid. Ensure to use -https:// or http//- at the begining.")
+    response.send("The URL you entered is invalid. Ensure to use -https:// or http//- at the begining.");
 };
 
 urls.errorID = function(uri, response){
-    response.send("Can not find shortened url with the parameter: " + uri + ".")
+    response.send("Can not find shortened url with the parameter: " + uri + ".");
 };
 
 module.exports = urls;
